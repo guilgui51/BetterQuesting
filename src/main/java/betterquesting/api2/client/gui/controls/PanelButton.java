@@ -34,7 +34,8 @@ public class PanelButton implements IPanelButton {
     private static final int STATE_SELECTED = 3;
 
     private final IGuiTexture[] texStates = new IGuiTexture[4];
-    private IGuiColor[] colStates = new IGuiColor[] { new GuiColorStatic(128, 128, 128, 255), new GuiColorStatic(255, 255, 255, 255), new GuiColorStatic(16777120), new GuiColorStatic(16777120) };
+    private IGuiColor[] colStates = new IGuiColor[] { new GuiColorStatic(128, 128, 128, 255),
+        new GuiColorStatic(255, 255, 255, 255), new GuiColorStatic(16777120), new GuiColorStatic(16777120) };
     private IGuiTexture texIcon = null;
     private IGuiColor colIcon = null;
     private int icoPadding = 0;
