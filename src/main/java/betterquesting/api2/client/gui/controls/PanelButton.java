@@ -60,12 +60,12 @@ public class PanelButton implements IPanelButton {
             PresetTexture.BTN_NORMAL_0.getTexture(),
             PresetTexture.BTN_NORMAL_1.getTexture(),
             PresetTexture.BTN_NORMAL_2.getTexture(),
-            PresetTexture.BTN_SELECTED.getTexture());
+            PresetTexture.BTN_SELECTED.getTexture(PresetTexture.BTN_NORMAL_2));
         this.setTextHighlight(
             PresetColor.BTN_DISABLED.getColor(),
             PresetColor.BTN_IDLE.getColor(),
             PresetColor.BTN_HOVER.getColor(),
-            PresetColor.BTN_SELECTED.getColor());
+            PresetColor.BTN_SELECTED.getColor(PresetColor.BTN_HOVER));
     }
 
     public PanelButton setClickAction(Consumer<PanelButton> action) {

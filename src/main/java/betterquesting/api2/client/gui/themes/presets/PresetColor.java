@@ -56,6 +56,10 @@ public enum PresetColor {
         return ThemeRegistry.INSTANCE.getColor(this.key);
     }
 
+    public IGuiColor getColor(PresetColor fallback) {
+        return ThemeRegistry.INSTANCE.getColor(this.key, fallback.key);
+    }
+
     public ResourceLocation getKey() {
         return this.key;
     }
@@ -84,7 +88,6 @@ public enum PresetColor {
         reg.setDefaultColor(BTN_DISABLED.key, new GuiColorStatic(128, 128, 128, 255));
         reg.setDefaultColor(BTN_IDLE.key, new GuiColorStatic(255, 255, 255, 255));
         reg.setDefaultColor(BTN_HOVER.key, new GuiColorStatic(16777120));
-        reg.setDefaultColor(BTN_SELECTED.key, new GuiColorStatic(16777120));
 
         reg.setDefaultColor(QUEST_LINE_LOCKED.key, new GuiColorStatic(192, 0, 0, 255));
         reg.setDefaultColor(

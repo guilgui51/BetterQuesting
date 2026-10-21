@@ -95,6 +95,10 @@ public enum PresetTexture {
         return ThemeRegistry.INSTANCE.getTexture(this.key);
     }
 
+    public IGuiTexture getTexture(PresetTexture fallback) {
+        return ThemeRegistry.INSTANCE.getTexture(this.key, fallback.key);
+    }
+
     public ResourceLocation getKey() {
         return this.key;
     }
@@ -128,9 +132,6 @@ public enum PresetTexture {
             new SlicedTexture(TX_SIMPLE, new GuiRectangle(84, 0, 12, 12), new GuiPadding(2, 2, 2, 3)));
         reg.setDefaultTexture(
             BTN_NORMAL_2.key,
-            new SlicedTexture(TX_SIMPLE, new GuiRectangle(96, 0, 12, 12), new GuiPadding(2, 2, 2, 3)));
-        reg.setDefaultTexture(
-            BTN_SELECTED.key,
             new SlicedTexture(TX_SIMPLE, new GuiRectangle(96, 0, 12, 12), new GuiPadding(2, 2, 2, 3)));
 
         reg.setDefaultTexture(
