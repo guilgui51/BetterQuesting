@@ -24,6 +24,7 @@ public enum PresetTexture {
     BTN_NORMAL_0("btn_normal_0"),
     BTN_NORMAL_1("btn_normal_1"),
     BTN_NORMAL_2("btn_normal_2"),
+    BTN_SELECTED("btn_selected"),
 
     BTN_CLEAN_0("btn_clean_0"),
     BTN_CLEAN_1("btn_clean_1"),
@@ -127,6 +128,9 @@ public enum PresetTexture {
             new SlicedTexture(TX_SIMPLE, new GuiRectangle(84, 0, 12, 12), new GuiPadding(2, 2, 2, 3)));
         reg.setDefaultTexture(
             BTN_NORMAL_2.key,
+            new SlicedTexture(TX_SIMPLE, new GuiRectangle(96, 0, 12, 12), new GuiPadding(2, 2, 2, 3)));
+        reg.setDefaultTexture(
+            BTN_SELECTED.key,
             new SlicedTexture(TX_SIMPLE, new GuiRectangle(96, 0, 12, 12), new GuiPadding(2, 2, 2, 3)));
 
         reg.setDefaultTexture(

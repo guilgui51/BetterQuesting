@@ -31,6 +31,7 @@ public enum PresetColor {
     BTN_DISABLED("btn_disabled"),
     BTN_IDLE("btn_idle"),
     BTN_HOVER("btn_hover"),
+    BTN_SELECTED("btn_selected"),
 
     QUEST_LINE_LOCKED("quest_line_locked"),
     QUEST_LINE_UNLOCKED("quest_line_unlocked"),
@@ -83,6 +84,7 @@ public enum PresetColor {
         reg.setDefaultColor(BTN_DISABLED.key, new GuiColorStatic(128, 128, 128, 255));
         reg.setDefaultColor(BTN_IDLE.key, new GuiColorStatic(255, 255, 255, 255));
         reg.setDefaultColor(BTN_HOVER.key, new GuiColorStatic(16777120));
+        reg.setDefaultColor(BTN_SELECTED.key, new GuiColorStatic(16777120));
 
         reg.setDefaultColor(QUEST_LINE_LOCKED.key, new GuiColorStatic(192, 0, 0, 255));
         reg.setDefaultColor(
